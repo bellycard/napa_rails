@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe NapaRails do
+describe Napa do
   it 'has a version number' do
-    expect(NapaRails::VERSION).not_to be nil
+    expect(Napa::VERSION).not_to be nil
   end
 
   it 'does something useful' do

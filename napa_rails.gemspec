@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'napa_rails/version'
+require 'napa/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "napa_rails"
-  spec.version       = NapaRails::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.version       = Napa::VERSION
+  spec.authors       = ["Darby Frey, Flori Garcia"]
+  spec.email         = ["darby@bellycard.com, flori@bellycard.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Napa features for Rails}
+  spec.description   = %q{Napa features for Rails}
+  spec.homepage      = "https://github.com/bellycard/napa_rails"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.add_dependency "grape"
+  spec.add_dependency "kaminari"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
