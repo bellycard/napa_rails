@@ -10,6 +10,4 @@ require "napa/grape_extensions/error_formatter"
 require "napa/json_error"
 
 module Napa
-
-  # Your code goes here...
 end
