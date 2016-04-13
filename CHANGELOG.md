@@ -12,3 +12,7 @@ master
 0.1.1
 ===
 * Require kaminari/grape
+
+0.1.2
+===
+* Require napa in napa_rails file
