@@ -13,7 +13,7 @@ if defined?(Rails)
           end
           modified_class.rescue_from ::ActiveRecord::RecordInvalid do |e|
             err = Napa::JsonError.new(:unprocessable_entity, e.message, e.record.errors.messages)
-            Napa::Logger.logger.debug(Napa::Logger.response(422, {}, err))
+            Rails.logger.debug({ status: 422, headers: {}, response: err.try(:first) }.map { |k, v| "#{k}=#{v}" }.join(' '))
             rack_response(err.to_json, 422)
           end
         end
