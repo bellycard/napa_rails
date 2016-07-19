@@ -16,3 +16,7 @@ master
 0.1.2
 ===
 * Require napa in napa_rails file
+
+0.1.3
+===
+* Require napa/grape_extensions/grape_extenders
