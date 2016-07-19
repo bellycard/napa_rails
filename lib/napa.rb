@@ -8,6 +8,7 @@ require "napa/output_formatters/representer"
 require "napa/output_formatters/pagination"
 require "napa/grape_extensions/grape_helpers"
 require "napa/grape_extensions/error_formatter"
+require "napa/grape_extensions/grape_extenders"
 require "napa/json_error"
 
 module Napa
