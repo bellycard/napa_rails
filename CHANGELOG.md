@@ -20,3 +20,9 @@ master
 0.1.3
 ===
 * Require napa/grape_extensions/grape_extenders
+
+0.1.4
+===
+* Add SortableApi
+* Add active_record dependency
+* Add acts_as_fu development dependency
