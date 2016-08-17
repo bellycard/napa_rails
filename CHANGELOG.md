@@ -1,5 +1,27 @@
 master
+====
+
+0.1.5
 ===
+* Add `result_count` key to Pagination for backward compatibility
+
+0.1.4
+===
+* Add SortableApi
+* Add active_record dependency
+* Add acts_as_fu development dependency
+
+0.1.3
+===
+* Require napa/grape_extensions/grape_extenders
+
+0.1.2
+===
+* Require napa in napa_rails file
+
+0.1.1
+===
+* Require kaminari/grape
 
 0.1.0
 ===
@@ -8,21 +30,3 @@ master
 * Add rspec_extensions with response_helpers
 * Add json_error
 * Add kaminari, grape and roar dependency
-
-0.1.1
-===
-* Require kaminari/grape
-
-0.1.2
-===
-* Require napa in napa_rails file
-
-0.1.3
-===
-* Require napa/grape_extensions/grape_extenders
-
-0.1.4
-===
-* Add SortableApi
-* Add active_record dependency
-* Add acts_as_fu development dependency
