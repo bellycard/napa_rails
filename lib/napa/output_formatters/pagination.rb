@@ -15,6 +15,7 @@ module Napa
         p[:per_page]      = @object.limit_value   if @object.respond_to?(:limit_value)
         p[:total_pages]   = @object.total_pages   if @object.respond_to?(:total_pages)
         p[:total_count]   = @object.total_count   if @object.respond_to?(:total_count)
+        p[:result_count]  = @object.total_count   if @object.respond_to?(:total_count)
       end
     end
 

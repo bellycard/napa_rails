@@ -18,6 +18,7 @@ describe Napa::Pagination do
       expect(data.to_h[:per_page]).to be(25)
       expect(data.to_h[:total_pages]).to be(10)
       expect(data.to_h[:total_count]).to be(248)
+      expect(data.to_h[:result_count]).to be(248)
     end
 
     it 'skips an attribute if the object does not respond to it' do
@@ -31,6 +32,7 @@ describe Napa::Pagination do
       expect(data.to_h[:per_page]).to be(25)
       expect(data.to_h[:total_pages]).to be_nil
       expect(data.to_h[:total_count]).to be_nil
+      expect(data.to_h[:result_count]).to be_nil
     end
   end
 end
