@@ -37,8 +37,8 @@ module Napa
       # don't paginate if collection is already paginated
       return data if data.respond_to?(:total_count)
 
-      page      = params.try(:page) || 1
-      per_page  = params.try(:per_page) || 25
+      page      = params.try(:[], :page) || 1
+      per_page  = params.try(:[], :per_page) || 25
 
       order_by_params!(data) if data.is_a?(ActiveRecord::Relation) && data.size > 0
 
